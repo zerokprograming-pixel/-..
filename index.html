@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172554">
+  <title>مساعد QUREO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="mark">Q</div>
+      <div>
+        <h1>مساعد QUREO</h1>
+        <p>مساعد لفهم دروس البرمجة والتدرّب عليها</p>
+      </div>
+    </header>
+
+    <section class="notice">
+      <strong>مهم:</strong> هذه أداة مساعدة للدراسة فقط. لا تطلب كلمة المرور أو QR،
+      ولا تدخل إلى حساب QUREO أو ترسل الإجابات تلقائياً.
+    </section>
+
+    <section class="panel">
+      <label for="question">انسخ نص السؤال هنا</label>
+      <textarea id="question" rows="5" placeholder="اكتب سؤال البرمجة أو التعليمات التي تظهر لك في QUREO..."></textarea>
+
+      <label for="code">الكود الذي جرّبته (اختياري)</label>
+      <textarea id="code" rows="5" dir="ltr" placeholder="اكتب الكود هنا..."></textarea>
+
+      <label for="helpType">نوع المساعدة</label>
+      <select id="helpType">
+        <option value="اشرح المطلوب خطوة بخطوة، ثم أعطني تلميحاً أولاً.">شرح السؤال وتلميح</option>
+        <option value="ساعدني في اكتشاف الخطأ في الكود، واشرح سبب الخطأ وكيف أصلحه.">تصحيح الأخطاء</option>
+        <option value="علّمني المفهوم المستخدم مع مثال مشابه، ثم أعطني تمريناً أتدرب عليه.">شرح المفهوم والتدريب</option>
+        <option value="راجع محاولتي ووضح ما ينقصها دون تنفيذ المهمة بدلاً مني.">مراجعة محاولتي</option>
+      </select>
+
+      <button id="prepare">جهّز سؤالي لـ ChatGPT</button>
+      <p id="status" aria-live="polite"></p>
+    </section>
+
+    <section class="tips">
+      <h2>طريقة الاستخدام</h2>
+      <ol>
+        <li>افتح QUREO في Chrome وسجّل الدخول بنفسك.</li>
+        <li>انسخ نص التمرين، أو اكتب ما يظهر لك، دون مشاركة بيانات الحساب.</li>
+        <li>ارجع إلى هذه الصفحة والصق السؤال ثم اضغط الزر.</li>
+        <li>سيفتح ChatGPT مع نص جاهز؛ راجع الشرح وجرّب الحل بنفسك داخل المنصة.</li>
+      </ol>
+    </section>
+
+    <footer>لا تضع كلمة المرور أو رمز QR أو أي بيانات شخصية في هذه الصفحة.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
